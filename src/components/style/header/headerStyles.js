@@ -24,6 +24,7 @@ const Name = styled.h1`
 
 const Titles = styled.p`
   color: ${textGrey};
+  font-size: 20px;
 `;
 
 const Text = styled.p`

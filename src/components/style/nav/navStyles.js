@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { grey, lightGrey, mainBlue } from "../colors/main";
 
 const Navbar = styled.section`
@@ -25,10 +26,11 @@ const List = styled.ul`
   text-decoration: none;
 `;
 
-const ListItem = styled.li`
+const ListItem = styled(Link)`
   color: ${grey};
   font-size: 0.75rem;
   padding: 20px 20px;
+  text-decoration: none;
   &:hover {
     color: ${mainBlue};
   }

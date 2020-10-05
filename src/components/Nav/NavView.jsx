@@ -6,9 +6,9 @@ const NavView = (props) => {
     <Navbar className="navView">
       <Logo>EDWIN MORADIAN</Logo>
       <List className="navList">
-        <ListItem>ABOUT</ListItem>
-        <ListItem>PROJECTS</ListItem>
-        <ListItem>WRITING</ListItem>
+        <ListItem to="/">ABOUT</ListItem>
+        <ListItem to="/projects">PROJECTS</ListItem>
+        <ListItem to="/writings">WRITING</ListItem>
       </List>
     </Navbar>
   );

@@ -1,20 +1,24 @@
 import styled from "styled-components";
-import { compBlue, grey, mainBlue } from "../colors/main";
+import { compBlue, grey, lightGrey, mainBlue } from "../colors/main";
 
 const ProjectsContainer = styled.section`
   color: ${grey};
   display: flex;
   font-family: "Merriweather", sans-serif;
   justify-content: center;
+  overflow-x: none;
   width: 100%;
 `;
 
 const ProjectsList = styled.ul`
+  box-sizing: border-box;
   max-width: 38em;
   padding: 2rem;
 `;
 
 const ProjectsListItem = styled.li`
+  border-bottom: 1px solid ${lightGrey};
+  box-sizing: border-box;
   display: flex;
   height: 300px;
   justify-content: center;

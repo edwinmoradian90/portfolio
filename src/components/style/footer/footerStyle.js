@@ -8,6 +8,7 @@ const FooterContainer = styled.footer`
   bottom: 0;
   padding: 10px 0px;
   position: fixed;
+  width: 100%;
   z-index: 10;
 `;
 
@@ -17,7 +18,6 @@ const FooterWrapper = styled.div`
   display: flex;
   font-size: 0.75rem;
   justify-content: space-between;
-  width: 100vw;
 `;
 
 const FooterFlexWrapper = styled.div`

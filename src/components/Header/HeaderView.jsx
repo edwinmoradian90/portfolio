@@ -17,7 +17,7 @@ const HeaderView = (props) => {
         <Name className="headerView">{name}</Name>
         <Titles className="headerView">
           {titles !== undefined
-            ? `${titles[0]}, ${titles[1]}, ${titles[2]}`
+            ? `${titles[0]}, ${titles[1]}, and ${titles[2]}.`
             : null}
         </Titles>
         <Text className="headerText">{text ? text : null}</Text>

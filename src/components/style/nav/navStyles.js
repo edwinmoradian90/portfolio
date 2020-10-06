@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { grey, lightGrey, mainBlue } from "../colors/main";
+import { grey, lightBlue, mainBlue } from "../colors/main";
 
 const Navbar = styled.section`
   align-items: center;
-  border-bottom: 1px solid ${lightGrey};
   display: flex;
-  height: 50px;
+  height: 55px;
   justify-content: space-between;
   letter-spacing: 0.2em;
+  line-height: 1.75rem;
   width: 100vw;
 `;
 
@@ -27,11 +27,14 @@ const List = styled.ul`
 `;
 
 const ListItem = styled(Link)`
+  box-sizing: border-box;
   color: ${grey};
   font-size: 0.75rem;
-  padding: 20px 20px;
+  font-weight: 700;
+  padding: 13px 20px;
   text-decoration: none;
   &:hover {
+    background: ${lightBlue};
     color: ${mainBlue};
   }
 `;

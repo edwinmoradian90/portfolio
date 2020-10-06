@@ -3,6 +3,7 @@ import { grey, lightBlue, lightGrey, mainBlue, textGrey } from "../colors/main";
 
 const HeaderContainer = styled.header`
   background: ${lightBlue};
+  border-top: 1px solid ${lightGrey};
   border-bottom: 1px solid ${lightGrey};
   color: ${grey};
   display: flex;
@@ -13,9 +14,12 @@ const HeaderContainer = styled.header`
 const Wrapper = styled.div``;
 
 const Name = styled.h1`
-  font-size: 45px;
+  color: ${grey};
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  letter-spacing: 0.01 rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
   &:hover {
     color: ${mainBlue};
     cursor: pointer;
@@ -24,7 +28,10 @@ const Name = styled.h1`
 
 const Titles = styled.p`
   color: ${textGrey};
-  font-size: 20px;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
 `;
 
 const Text = styled.p`

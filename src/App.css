@@ -125,4 +125,5 @@ table {
 html {
   color: #2e2e2e;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }

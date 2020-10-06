@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Nav from "./components/Nav/Nav";
+import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Writings from "./components/Writings/Writings";
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/writings" component={Writings} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

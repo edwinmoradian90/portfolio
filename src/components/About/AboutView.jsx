@@ -23,7 +23,7 @@ const AboutView = (props) => {
         <AboutContact className="aboutContact">
           <Title className="aboutContactTitle">{contact.title} </Title>
           <ul className="contactInformationList">
-            {contact.urls.map((url) => {
+            {contact.urls.map((url, i) => {
               return (
                 <li className="contactInformationItem">
                   <ContactLinkWrapper

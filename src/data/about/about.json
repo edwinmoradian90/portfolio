@@ -1,0 +1,26 @@
+{
+  "about": {
+    "title": "About me",
+    "summary": ""
+  },
+  "contact": {
+    "title": "Contact",
+    "urls": [
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/edwin-moradian",
+        "icon": ""
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/edwinmoradian90",
+        "icon": ""
+      },
+      {
+        "email": "Email",
+        "url": "mailto:edwin.moradian90@gmail.com",
+        "icon": ""
+      }
+    ]
+  }
+}

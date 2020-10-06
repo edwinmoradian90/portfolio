@@ -9,7 +9,7 @@ const Navbar = styled.section`
   justify-content: space-between;
   letter-spacing: 0.2em;
   line-height: 1.75rem;
-  width: 100vw;
+  width: 100%;
 `;
 
 const Logo = styled.div`

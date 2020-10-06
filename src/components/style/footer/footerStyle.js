@@ -5,9 +5,7 @@ const FooterContainer = styled.footer`
   background: ${white};
   border-top: 1px solid ${lightGrey};
   box-sizing: border-box;
-  bottom: 0;
   padding: 10px 0px;
-  position: fixed;
   width: 100%;
   z-index: 10;
 `;

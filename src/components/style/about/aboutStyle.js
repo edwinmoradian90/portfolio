@@ -5,6 +5,7 @@ const AboutContainer = styled.div`
   color: ${grey};
   display: flex;
   justify-content: center;
+  min-height: calc(100vh - 315px);
   padding: 2rem;
 `;
 

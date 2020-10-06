@@ -22,7 +22,11 @@ const ProjectsView = (props) => {
             <ProjectsListItem className="projectContainer">
               <ProjectImage src={image} alt={id} />
               <ProjectInformationContainer className="projectInformationContainer">
-                <ProjectDemoLink href={url} className="projectDemoLink">
+                <ProjectDemoLink
+                  href={url}
+                  target="_blank"
+                  className="projectDemoLink"
+                >
                   <ProjectName className="projectName">{name}</ProjectName>
                   <ProjectUrl>{url}</ProjectUrl>
                 </ProjectDemoLink>

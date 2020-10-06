@@ -1,12 +1,14 @@
 import styled from "styled-components";
-import { lightGrey, mainBlue, textGrey } from "../colors/main";
+import { lightGrey, mainBlue, textGrey, white } from "../colors/main";
 
 const FooterContainer = styled.footer`
+  background: ${white};
   border-top: 1px solid ${lightGrey};
   box-sizing: border-box;
   bottom: 0;
   padding: 10px 0px;
   position: fixed;
+  z-index: 10;
 `;
 
 const FooterWrapper = styled.div`
@@ -32,7 +34,8 @@ const FooterIconList = styled.ul`
   padding-right: 20px;
 `;
 
-const FooterIconListItem = styled.li`
+const FooterIconListItem = styled.a`
+  color: inherit;
   font-size: 1.333em;
   margin-left: 10px;
   &:hover {

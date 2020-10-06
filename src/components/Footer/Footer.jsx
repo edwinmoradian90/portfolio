@@ -11,7 +11,8 @@ import {
 } from "../style/footer/footerStyle";
 
 const Footer = (props) => {
-  const { name, year } = footerData;
+  const { name, year } = footerData.text;
+  const { urls } = footerData;
   const ids = ["linkedin", "github", "medium", "angellist", "email"];
   return (
     <FooterContainer className="footerView">
@@ -21,10 +22,14 @@ const Footer = (props) => {
           <span className="currentYear">{year}</span>
         </FooterFlexWrapper>
         <FooterIconList className="footerLinksList">
-          {ids.map((id) => {
+          {urls.map((url) => {
             return (
-              <FooterIconListItem className="iconListItem">
-                {icons[id]}
+              <FooterIconListItem
+                href={url.url}
+                target={url.id === "email" ? "" : "_blank"}
+                className="iconListItem"
+              >
+                {icons[url.id]}
               </FooterIconListItem>
             );
           })}

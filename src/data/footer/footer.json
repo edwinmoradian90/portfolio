@@ -1,4 +1,33 @@
 {
-  "name": "Edwin Moradian",
-  "year": "2020"
+  "text": {
+    "name": "Edwin Moradian",
+    "year": "2020"
+  },
+  "urls": [
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/edwin-moradian"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "url": "https://github.com/edwinmoradian90"
+    },
+    {
+      "id": "medium",
+      "name": "Medium",
+      "url": "https://medium.com/@edwin.moradian90"
+    },
+    {
+      "id": "angellist",
+      "name": "AngelList",
+      "url": "https://angel.co/u/edwin-moradian"
+    },
+    {
+      "id": "email",
+      "name": "Email",
+      "url": "mailto:edwin.moradian90@gmail.com"
+    }
+  ]
 }

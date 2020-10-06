@@ -20,9 +20,7 @@ const Title = styled.h3`
   opacity: 0.9;
 `;
 
-const AboutContact = styled.div`
-  width: 160px;
-`;
+const AboutContact = styled.div``;
 
 const AboutSummary = styled.p`
   font-family: "Merriweather", sans-serif;

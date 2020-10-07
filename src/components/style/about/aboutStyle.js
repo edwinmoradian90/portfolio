@@ -7,11 +7,17 @@ const AboutContainer = styled.div`
   justify-content: center;
   min-height: calc(100vh - 315px);
   padding: 2rem;
+  @media (max-width: 769px) {
+    flex-direction: column;
+  }
 `;
 
 const About = styled.div`
   margin-right: 20px;
   width: 422px;
+  @media (max-width: 769px) {
+    width: 100%;
+  }
 `;
 
 const Title = styled.h3`
@@ -30,6 +36,22 @@ const AboutSummary = styled.p`
   letter-spacing: 0.01rem;
   line-height: 1.75rem;
   margin-bottom: 1rem;
+`;
+
+const ContactInformationList = styled.ul`
+  @media (max-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+`;
+
+const ContactInformationItem = styled.li`
+  @media (max-width: 769px) {
+    display: flex;
+  }
 `;
 
 const ContactLinkWrapper = styled.a`
@@ -57,6 +79,8 @@ export {
   AboutContainer,
   AboutSummary,
   ContactIcon,
+  ContactInformationItem,
+  ContactInformationList,
   ContactLinkWrapper,
   ContactUrl,
   Title,

@@ -5,6 +5,8 @@ import {
   AboutContainer,
   AboutSummary,
   ContactIcon,
+  ContactInformationItem,
+  ContactInformationList,
   ContactLinkWrapper,
   ContactUrl,
   Title,
@@ -22,10 +24,10 @@ const AboutView = (props) => {
         </About>
         <AboutContact className="aboutContact">
           <Title className="aboutContactTitle">{contact.title} </Title>
-          <ul className="contactInformationList">
+          <ContactInformationList className="contactInformationList">
             {contact.urls.map((url, i) => {
               return (
-                <li className="contactInformationItem">
+                <ContactInformationItem className="contactInformationItem">
                   <ContactLinkWrapper
                     href={url.url}
                     target={url.id === "email" ? "" : "_blank"}
@@ -36,10 +38,10 @@ const AboutView = (props) => {
                     </ContactIcon>
                     <ContactUrl>{url.name}</ContactUrl>
                   </ContactLinkWrapper>
-                </li>
+                </ContactInformationItem>
               );
             })}
-          </ul>
+          </ContactInformationList>
         </AboutContact>
       </AboutContainer>
     </div>

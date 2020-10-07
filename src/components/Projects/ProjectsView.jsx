@@ -34,13 +34,24 @@ const ProjectsView = (props) => {
                   <ProjectUrl>{url}</ProjectUrl>
                 </ProjectDemoLink>
                 <ProjectDescription className="projectDescription">
-                  {description}
+                  <span>{description}</span>{" "}
+                  <ProjectDemoLink
+                    href={github}
+                    target="_blank"
+                    color="#007199"
+                  >
+                    View code on GitHub.
+                  </ProjectDemoLink>
                 </ProjectDescription>
                 <ProjectIconsList className="toolIcons">
                   {tools.map((tool) => {
                     return (
                       <ProjectIconsListItem className="toolIcon">
-                        {icons[tool] ? icons[tool].colored : null}
+                        {icons[tool]
+                          ? icons[tool].colored
+                            ? icons[tool].colored
+                            : icons[tool]
+                          : null}
                       </ProjectIconsListItem>
                     );
                   })}

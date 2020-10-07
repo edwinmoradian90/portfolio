@@ -36,7 +36,10 @@ const Titles = styled.p`
 
 const Text = styled.p`
   color: ${textGrey};
-  font-size: 20px;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
 `;
 
 export { HeaderContainer, Name, Titles, Text, Wrapper };

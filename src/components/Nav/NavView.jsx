@@ -1,7 +1,15 @@
 import React from "react";
-import { Navbar, List, ListItem, Logo } from "../style/nav/navStyles";
+import {
+  Hamburger,
+  List,
+  ListItem,
+  Logo,
+  Navbar,
+} from "../style/nav/navStyles";
+import icons from "../../data/icons/icons";
 
 const NavView = (props) => {
+  const { dropDownMenu, toggleDropDownMenu } = props;
   return (
     <Navbar className="navView">
       <Logo>EDWIN MORADIAN</Logo>
@@ -10,6 +18,7 @@ const NavView = (props) => {
         <ListItem to="/projects">PROJECTS</ListItem>
         <ListItem to="/writings">WRITING</ListItem>
       </List>
+      <Hamburger onClick={toggleDropDownMenu}>{icons.hamburger}</Hamburger>
     </Navbar>
   );
 };

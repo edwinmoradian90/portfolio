@@ -12,8 +12,11 @@ const ProjectsContainer = styled.section`
 
 const ProjectsList = styled.ul`
   box-sizing: border-box;
-  max-width: 38em;
+  max-width: 60em;
   padding: 2rem;
+  @media (max-width: 769px) {
+    padding: 2rem 0;
+  }
 `;
 
 const ProjectsListItem = styled.li`
@@ -23,21 +26,36 @@ const ProjectsListItem = styled.li`
   height: 350px;
   justify-content: center;
   padding: 2rem 0;
+  @media (max-width: 769px) {
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 const ProjectImage = styled.img`
-  height: 150px;
+  height: 200px;
   padding: 0 1rem;
-  width: 150px;
+  width: 200px;
+  @media (max-width: 769px) {
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 300px;
+  }
 `;
 
 const ProjectInformationContainer = styled.div`
   margin: 0 10px;
+  width: 300px;
 `;
 
 const ProjectDemoLink = styled.a`
-  color: inherit;
+  color: ${(props) => (props.color ? props.color : "inherit")};
   text-decoration: none;
+  &:hover {
+    color: ${mainBlue};
+  }
 `;
 
 const ProjectName = styled.h2`
@@ -56,6 +74,7 @@ const ProjectUrl = styled.p`
   font-size: 0.75rem;
   letter-spacing: 0.01rem;
   line-height: 1.75rem;
+  width: auto;
   &:hover {
     color: ${compBlue};
   }
@@ -72,16 +91,20 @@ const ProjectDescription = styled.p`
 const ProjectIconsList = styled.ul`
   display: flex;
   justify-content: flex-start;
-  margin-top: 30px;
+  margin-top: 20px;
+  width: 100%;
 `;
 
 const ProjectIconsListItem = styled.li`
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-right: 30px;
   transition: 0.3s;
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
+  }
+  @media (max-width: 769px) {
+    margin-right: 25px;
   }
 `;
 

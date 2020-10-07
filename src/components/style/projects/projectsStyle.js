@@ -26,6 +26,9 @@ const ProjectsListItem = styled.li`
   height: 350px;
   justify-content: center;
   padding: 2rem 0;
+  &:last-child {
+    border-bottom: 0;
+  }
   @media (max-width: 769px) {
     align-items: center;
     flex-direction: column;

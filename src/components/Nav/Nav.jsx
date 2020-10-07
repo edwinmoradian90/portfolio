@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import NavView from "./NavView";
-import { DropDownMenu, DropDownListItem } from "../style/nav/navStyles";
+import {
+  DropDownMenu,
+  DropDownListItem,
+  DropDownListItemHref,
+} from "../style/nav/navStyles";
 
 const Nav = () => {
   const [dropDownMenu, setDropDownMenu] = useState(false);
@@ -13,7 +17,7 @@ const Nav = () => {
         dropDownMenu={dropDownMenu}
         toggleDropDownMenu={toggleDropDownMenu}
       />
-      <DropDownMenu dropDownMenu={dropDownMenu}>
+      <DropDownMenu className="dropDownMenu" dropDownMenu={dropDownMenu}>
         <DropDownListItem onClick={toggleDropDownMenu} to="/">
           ABOUT
         </DropDownListItem>
@@ -23,6 +27,12 @@ const Nav = () => {
         <DropDownListItem onClick={toggleDropDownMenu} to="/writings">
           WRITINGS
         </DropDownListItem>
+        <DropDownListItemHref
+          onClick={toggleDropDownMenu}
+          href="mailto:edwin.moradian90@gmail.com"
+        >
+          CONTACT
+        </DropDownListItemHref>
       </DropDownMenu>
     </div>
   );

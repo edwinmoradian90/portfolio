@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { grey, lightBlue, lightGrey, mainBlue, white } from "../colors/main";
 
 const dropDown = keyframes`
-  from {  transform: translate3d(-100vh, 0, 0); }
-  to {  transform: translate3d(0, 0, 0);}
+  from {height: 0px}
+  to {height: auto}
 `;
 
 const pullUp = keyframes`
-  from {height: 200px;}
-  to {height: 0px;}
+  from {height: auto}
+  to {height: 0px}
 `;
 
 const Navbar = styled.section`
@@ -23,10 +23,12 @@ const Navbar = styled.section`
   width: 100%;
 `;
 
-const Logo = styled.div`
+const Logo = styled(Link)`
+  color: inherit;
   font-size: inherit;
   font-weight: 700;
   padding: 13px 20px;
+  text-decoration: none;
 `;
 
 const List = styled.ul`
@@ -41,7 +43,18 @@ const List = styled.ul`
 `;
 
 const ListItem = styled(Link)`
-  box-sizing: border-box;
+  color: ${grey};
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 13px 20px;
+  text-decoration: none;
+  &:hover {
+    background: ${lightBlue};
+    color: ${mainBlue};
+  }
+`;
+
+const ListItemHref = styled.a`
   color: ${grey};
   font-size: 0.75rem;
   font-weight: 700;
@@ -70,7 +83,6 @@ const DropDownMenu = styled.div`
   display: ${(props) => (props.dropDownMenu ? "flex" : "none")};
   flex-direction: column;
   height: ${(props) => (props.dropDownMenu ? "auto" : "0px")};
-  transition: 0.5s;
   width: 100%;
   z-index: 10;
   @media (min-width: 769px) {
@@ -95,12 +107,31 @@ const DropDownListItem = styled(Link)`
   }
 `;
 
+const DropDownListItemHref = styled.a`
+  background: ${white};
+  border-top: 1px solid ${lightGrey};
+  color: inherit;
+  font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  padding: 20px 20px;
+  text-decoration: none;
+  &:hover {
+    background: ${lightBlue};
+    color: ${mainBlue};
+    cursor: pointer;
+  }
+`;
+
 export {
   DropDownMenu,
   DropDownListItem,
+  DropDownListItemHref,
   Hamburger,
   List,
   ListItem,
+  ListItemHref,
   Logo,
   Navbar,
 };

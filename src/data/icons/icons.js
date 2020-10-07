@@ -1,6 +1,6 @@
 import React from "react";
 import { FaAngellist, FaLinkedin, FaGithub, FaMedium } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdDateRange } from "react-icons/md";
 import { SiFirebase, SiRedux } from "react-icons/si";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -13,6 +13,7 @@ const icons = {
   medium: <FaMedium />,
   firebase: <SiFirebase />,
   redux: <SiRedux />,
+  calendar: <MdDateRange />,
   bootstrap: {
     colored: <i class="devicon-bootstrap-plain colored"></i>,
     plain: <i class="devicon-bootstrap-plain"></i>,

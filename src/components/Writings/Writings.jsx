@@ -1,12 +1,14 @@
 import React from "react";
+import icons from "../../data/icons/icons";
+import writingsData from "../../data/writings/writings.json";
 import Header from "../Header/Header";
 import WritingsView from "./WritingsView";
 
-const Writings = (props) => {
+const Writings = () => {
   return (
     <section className="writings">
       <Header />
-      <WritingsView />
+      <WritingsView icons={icons} writingsData={writingsData} />
     </section>
   );
 };

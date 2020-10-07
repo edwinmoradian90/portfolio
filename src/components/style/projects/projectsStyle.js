@@ -20,7 +20,7 @@ const ProjectsListItem = styled.li`
   border-bottom: 1px solid ${lightGrey};
   box-sizing: border-box;
   display: flex;
-  height: 300px;
+  height: 350px;
   justify-content: center;
   padding: 2rem 0;
 `;
@@ -31,7 +31,9 @@ const ProjectImage = styled.img`
   width: 150px;
 `;
 
-const ProjectInformationContainer = styled.div``;
+const ProjectInformationContainer = styled.div`
+  margin: 0 10px;
+`;
 
 const ProjectDemoLink = styled.a`
   color: inherit;
@@ -42,7 +44,6 @@ const ProjectName = styled.h2`
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
-  line-height: 1.25;
   margin-bottom: 0.75rem;
   opacity: 0.9;
   &:hover {
@@ -68,10 +69,28 @@ const ProjectDescription = styled.p`
   line-height: 1.75rem;
 `;
 
+const ProjectIconsList = styled.ul`
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+`;
+
+const ProjectIconsListItem = styled.li`
+  font-size: 1.4rem;
+  margin-right: 30px;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+`;
+
 export {
   ProjectsContainer,
   ProjectDemoLink,
   ProjectDescription,
+  ProjectIconsList,
+  ProjectIconsListItem,
   ProjectImage,
   ProjectInformationContainer,
   ProjectsList,

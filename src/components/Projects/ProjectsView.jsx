@@ -31,7 +31,9 @@ const ProjectsView = (props) => {
                   className="projectDemoLink"
                 >
                   <ProjectName className="projectName">{name}</ProjectName>
-                  <ProjectUrl>{url}</ProjectUrl>
+                  <ProjectUrl>
+                    {id === "newsweek" ? "NewsWeek Demo" : url}
+                  </ProjectUrl>
                 </ProjectDemoLink>
                 <ProjectDescription className="projectDescription">
                   <span>{description}</span>{" "}

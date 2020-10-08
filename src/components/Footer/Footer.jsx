@@ -10,10 +10,9 @@ import {
   FooterWrapper,
 } from "../style/footer/footerStyle";
 
-const Footer = (props) => {
+const Footer = () => {
   const { name, year } = footerData.text;
   const { urls } = footerData;
-  const ids = ["linkedin", "github", "medium", "angellist", "email"];
   return (
     <FooterContainer className="footerView">
       <FooterWrapper className="footerWrapper">
@@ -25,6 +24,7 @@ const Footer = (props) => {
           {urls.map((url) => {
             return (
               <FooterIconListItem
+                key={url.url}
                 href={url.url}
                 target={url.id === "email" ? "" : "_blank"}
                 className="iconListItem"

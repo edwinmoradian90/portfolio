@@ -10,7 +10,6 @@ import {
 const HeaderView = (props) => {
   const { data } = props.data;
   const { name, titles, text } = data;
-  console.log("data:", data);
   return (
     <HeaderContainer className="headerView">
       <Wrapper>

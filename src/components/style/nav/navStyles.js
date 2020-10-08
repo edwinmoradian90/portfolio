@@ -1,16 +1,6 @@
-import styled, { keyframes, css } from "styled-components";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { grey, lightBlue, lightGrey, mainBlue, white } from "../colors/main";
-
-const dropDown = keyframes`
-  from {height: 0px}
-  to {height: auto}
-`;
-
-const pullUp = keyframes`
-  from {height: auto}
-  to {height: 0px}
-`;
 
 const Navbar = styled.section`
   align-items: center;
@@ -43,7 +33,7 @@ const List = styled.ul`
 `;
 
 const ListItem = styled(Link)`
-  color: ${grey};
+  color: ${(props) => (props.tabOn ? mainBlue : grey)};
   font-size: 0.75rem;
   font-weight: 700;
   padding: 13px 20px;

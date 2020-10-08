@@ -27,7 +27,10 @@ const AboutView = (props) => {
           <ContactInformationList className="contactInformationList">
             {contact.urls.map((url, i) => {
               return (
-                <ContactInformationItem className="contactInformationItem">
+                <ContactInformationItem
+                  key={url.url}
+                  className="contactInformationItem"
+                >
                   <ContactLinkWrapper
                     href={url.url}
                     target={url.id === "email" ? "" : "_blank"}

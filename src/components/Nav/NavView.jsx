@@ -10,14 +10,21 @@ import {
 import icons from "../../data/icons/icons";
 
 const NavView = (props) => {
-  const { toggleDropDownMenu } = props;
+  const { toggleDropDownMenu, currentPage } = props;
+  const { about, projects, writings } = currentPage;
   return (
     <Navbar className="navView">
       <Logo to="/">EDWIN MORADIAN</Logo>
       <List className="navList">
-        <ListItem to="/">ABOUT</ListItem>
-        <ListItem to="/projects">PROJECTS</ListItem>
-        <ListItem to="/writings">WRITING</ListItem>
+        <ListItem tabOn={about} id="about" to="/">
+          ABOUT
+        </ListItem>
+        <ListItem tabOn={projects} id="projects" to="/projects">
+          PROJECTS
+        </ListItem>
+        <ListItem tabOn={writings} id="writings" to="/writings">
+          WRITINGS
+        </ListItem>
         <ListItemHref href="mailto:edwin.moradian90@gmail.com">
           CONTACT
         </ListItemHref>

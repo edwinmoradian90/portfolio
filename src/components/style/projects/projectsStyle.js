@@ -57,7 +57,7 @@ const ProjectDemoLink = styled.a`
   color: ${(props) => (props.color ? props.color : "inherit")};
   text-decoration: none;
   &:hover {
-    color: ${mainBlue};
+    color: ${compBlue};
   }
 `;
 

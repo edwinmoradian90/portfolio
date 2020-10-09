@@ -31,6 +31,12 @@ const ProjectsView = (props) => {
                   className="projectDemoLink"
                 >
                   <ProjectName className="projectName">{name}</ProjectName>
+                </ProjectDemoLink>
+                <ProjectDemoLink
+                  href={url}
+                  target="_blank"
+                  className="projectDemoLink"
+                >
                   <ProjectUrl>
                     {id === "newsweek" ? "NewsWeek Demo" : url}
                   </ProjectUrl>

@@ -39,9 +39,9 @@ const WritingsListItem = styled.li`
 const WritingImage = styled.img`
   height: 200px;
   padding: 0 1rem;
-  width: 200px;
+  width: 300px;
   @media (max-width: 769px) {
-    height: 300px;
+    height: 200px;
     margin-bottom: 20px;
     padding: 0;
     width: 300px;

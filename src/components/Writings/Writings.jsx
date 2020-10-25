@@ -1,6 +1,6 @@
 import React from "react";
 import icons from "../../data/icons/icons";
-import writingsData from "../../data/writings/writings.json";
+import writingsData from "../../data/writings/writings";
 import Header from "../Header/Header";
 import WritingsView from "./WritingsView";
 

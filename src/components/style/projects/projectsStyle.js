@@ -41,17 +41,16 @@ const ProjectImage = styled.img`
   padding: 0 1rem;
   width: 300px;
   @media (max-width: 769px) {
-    height: 300px;
+    height: 200px;
     margin-bottom: 20px;
     padding: 0;
-    width: 400px;
+    width: 300px;
   }
 `;
 
 const ProjectInformationContainer = styled.div`
   margin: 0 10px;
-  min-width: 300px;
-  max-width: 400px;
+  width: 300px;
 `;
 
 const ProjectDemoLink = styled.a`

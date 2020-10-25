@@ -2,13 +2,19 @@ import React from "react";
 import Header from "../Header/Header";
 import icons from "../../data/icons/icons";
 import ProjectsView from "./ProjectsView";
-import projectsData from "../../data/projects/projects.json";
+import projectsData from "../../data/projects/projects";
+import bookstore from "../../assets/images/projects/bookstore.png";
 
 const Projects = (props) => {
+  const projectImages = [bookstore];
   return (
     <div className="projects">
       <Header />
-      <ProjectsView icons={icons} projectsData={projectsData} />
+      <ProjectsView
+        projectImages={projectImages}
+        icons={icons}
+        projectsData={projectsData}
+      />
     </div>
   );
 };

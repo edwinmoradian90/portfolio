@@ -39,18 +39,19 @@ const ProjectsListItem = styled.li`
 const ProjectImage = styled.img`
   height: 200px;
   padding: 0 1rem;
-  width: 200px;
+  width: 300px;
   @media (max-width: 769px) {
     height: 300px;
     margin-bottom: 20px;
     padding: 0;
-    width: 300px;
+    width: 400px;
   }
 `;
 
 const ProjectInformationContainer = styled.div`
   margin: 0 10px;
-  width: 300px;
+  min-width: 300px;
+  max-width: 400px;
 `;
 
 const ProjectDemoLink = styled.a`

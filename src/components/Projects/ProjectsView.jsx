@@ -14,8 +14,7 @@ import {
 } from "../style/projects/projectsStyle";
 
 const ProjectsView = (props) => {
-  const { icons, projectsData } = props;
-  console.log("icons:", icons);
+  const { icons, projectsData, projectImages } = props;
   return (
     <ProjectsContainer className="projectsView">
       <ProjectsList className="projectsWrapper">

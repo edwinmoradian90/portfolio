@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { grey, mainBlue } from "../colors/main";
+import { Link } from "react-router-dom";
+import { grey, mainBlue, compBlue } from "../colors/main";
 
 const AboutContainer = styled.div`
   color: ${grey};
@@ -25,6 +26,24 @@ const Title = styled.h3`
   font-weight: 700;
   margin: 1em 0;
   opacity: 0.9;
+`;
+
+const AboutHref = styled.a`
+  color: ${mainBlue};
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: ${compBlue};
+  }
+`;
+
+const AboutLink = styled(Link)`
+  color: ${mainBlue};
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: ${compBlue};
+  }
 `;
 
 const AboutContact = styled.div``;
@@ -77,6 +96,8 @@ export {
   About,
   AboutContact,
   AboutContainer,
+  AboutHref,
+  AboutLink,
   AboutSummary,
   ContactIcon,
   ContactInformationItem,

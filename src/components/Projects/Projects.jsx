@@ -5,7 +5,7 @@ import ProjectsView from "./ProjectsView";
 import projectsData from "../../data/projects/projects";
 import bookstore from "../../assets/images/projects/bookstore.png";
 
-const Projects = (props) => {
+const Projects = () => {
   const projectImages = [bookstore];
   return (
     <div className="projects">

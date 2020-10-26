@@ -62,7 +62,7 @@ export default [
     github: "https://github.com/edwinmoradian90/calculator",
     url: "https://calculator-a6ddd.web.app",
     description:
-      "A calculator with all adding, subtracting, divding, and multiplying functionality. Built with React.",
+      "A calculator with all adding, subtracting, dividing, and multiplying functionality. Built with React.",
     tools: ["react", "css", "firebase"],
   },
   {

@@ -4,7 +4,7 @@ import articleTwo from "../../assets/images/articles/articleTwo.jpeg";
 export default [
   {
     id: "articleOne",
-    name: "How to setup Rails api with React",
+    name: "How to setup Rails API with React",
     description:
       "There are many ways to use React as the front-end of your web application. With Rails, there are a couple of gems available that embed React in your Rails code, essentially creating a Rails application with React built-in. But what if you want to completely separate concerns, or in other words, not mix your React and Rails code? This can be done fairly easily with Rails 6 and will be the topic of interest today.",
     image: articleOne,

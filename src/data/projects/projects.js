@@ -32,7 +32,7 @@ export default [
     url:
       "https://raw.githack.com/edwinmoradian90/newsweek-clone-bootstrap/master/index.html",
     description:
-      "A NewsWeek clone built to replicate the popular news outlet, 'NewsWeek'. Built with Html, CSS, and Bootstrap 4.",
+      "A NewsWeek clone built to replicate the popular news outlet, 'NewsWeek'. Built with HTML, CSS, and Bootstrap 4.",
     tools: ["html", "css", "bootstrap"],
   },
   {

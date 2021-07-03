@@ -10,9 +10,7 @@ export default {
         physics. I love programming, traveling, and making a difference where I
         can. In the last three years, I've primarily focused in the web
         development space and have worked with many diverse teams remotely from
-        all parts of the globe. Currently, I am stationed in Yerevan, Armenia
-        where I have undertaken new philanthropic goals. If you need a project
-        built or have a job opportunity, please{" "}
+        all parts of the globe. If you need a project built or have a job opportunity, please{" "}
         <AboutHref href="mailto:edwin.moradian90@gmail.com">
           contact me
         </AboutHref>{" "}

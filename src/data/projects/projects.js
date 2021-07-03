@@ -4,6 +4,7 @@ import bookstore from "../../assets/images/projects/bookstore.png";
 import facebook from "../../assets/images/projects/fakebook.png";
 import calculator from "../../assets/images/projects/calculator.png";
 import ecommerce from "../../assets/images/projects/ecommerce.jpg";
+import astro from "../../assets/images/projects/astro.png";
 
 export default [
   {
@@ -34,6 +35,15 @@ export default [
     description:
       "A NewsWeek clone built to replicate the popular news outlet, 'NewsWeek'. Built with HTML, CSS, and Bootstrap 4.",
     tools: ["html", "css", "bootstrap"],
+  },
+  {
+    id: "game",
+    name: "Space Shooter",
+    image: astro,
+    github: "https://github.com/edwinmordian/runner",
+    url: "https://bit.ly/36aWcVm",
+    description: "A space shooter built with JavaScript! Just float around and shoot the asteroids.",
+    tools: ["html", "css", "javascript"]
   },
   {
     id: "bookstore",

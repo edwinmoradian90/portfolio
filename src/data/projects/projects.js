@@ -1,6 +1,5 @@
 import tracker from '../../assets/images/projects/tracker.png';
 import newsweek from '../../assets/images/projects/newsweek.jpg';
-import facebook from '../../assets/images/projects/fakebook.png';
 import astro from '../../assets/images/projects/astro.png';
 import gumar from '../../assets/images/projects/gumar-screenshot-wide.jpg';
 
@@ -42,7 +41,7 @@ export default [
     github: 'https://github.com/edwinmoradian90/tracker-app',
     url: 'https://tracker-app-react-rails.herokuapp.com',
     description:
-      'A tracking app that trackers amount driven, fuel usage, and driving limit. Built with React, Redux, and Rails.',
+      'A tracking app that trackers amount driven, fuel usage, and driving limit. Built with React, Redux, and Rails. (Need to fix link)',
     tools: [
       'rails',
       'react',

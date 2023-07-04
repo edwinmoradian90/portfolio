@@ -53,14 +53,4 @@ export default [
       'webpack',
     ],
   },
-  {
-    id: 'facebook',
-    name: 'Facebook Clone',
-    image: facebook,
-    github: 'https://github.com/edwinmoradian90/facebook-clone',
-    url: 'https://shielded-taiga-48885.herokuapp.com',
-    description:
-      'A FaceBook clone with login, friends and friend requests, timeline, and more. Built with Ruby and Rails.',
-    tools: ['rails', 'postgresql', 'sass', 'heroku'],
-  },
 ];

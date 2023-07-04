@@ -17,10 +17,10 @@ export default [
   },
   {
     id: 'game',
-    name: 'Space Shooter',
+    name: 'Spacey space space',
     image: astro,
     github: 'https://github.com/edwinmordian/runner',
-    url: 'https://bit.ly/36aWcVm',
+    url: 'https://shorturl.at/dgsMN',
     description:
       'A space shooter built with JavaScript! Just float around and shoot the asteroids.',
     tools: ['html', 'css', 'javascript'],

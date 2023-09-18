@@ -19,7 +19,7 @@ export default [
     name: 'Spacey space space',
     image: astro,
     github: 'https://github.com/edwinmordian/runner',
-    url: 'https://shorturl.at/dgsMN',
+    url: 'https://spacey-space-space.netlify.app/',
     description:
       'A space shooter built with JavaScript! Just float around and shoot the asteroids.',
     tools: ['html', 'css', 'javascript'],
